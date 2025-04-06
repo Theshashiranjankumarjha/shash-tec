@@ -1,44 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shash-tec Englishians Academy</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #e3f2fd;
-      color: #0d47a1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 600px;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shash-Tec Englishians Academy - English Coaching in Muzaffarpur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Define our Royal Blue color (consistent with index.html)
+                        'royal-blue': '#00539C',
+                        // Define grays (consistent with index.html)
+                        'light-gray': '#f0f0f0',
+                        'dark-gray': '#333333',
+                        // Define Accent color for this page (from logo)
+                        'accent-gold': '#D97706', // Example: Tailwind's amber-600 or similar orange/gold
+                    },
+                    fontFamily: {
+                        // Ensure Inter font is used (Tailwind default)
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* Add any custom CSS base styles or component styles here if needed */
+        html, body {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex-grow: 1;
+        }
+        /* Custom accent styles for this page */
+        .accent-heading {
+            @apply text-accent-gold; /* Use gold for specific headings */
+        }
+        .accent-border {
+            @apply border-accent-gold; /* Use gold for borders */
+        }
+        .accent-bg-light {
+            @apply bg-amber-50; /* Very light gold/amber background for sections */
+        }
+    </style>
 </head>
-<body>
-  <h1>Welcome to Shash-tec Englishians Academy</h1>
-  <p>Learn spoken English, grammar, and communication skills with the best methods. Our courses are tailored for students, professionals, and learners of all ages.</p>
-  <footer>
-    Muzaffarpur, Bihar | Phone: 8130754515<br>
-    © 2025 Shash-tec Englishians Academy
-  </footer>
+<body class="bg-gray-50 text-dark-gray">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-royal-blue">
+                Shash-Tec Group
+                </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-gray-600 hover:text-royal-blue">Home</a></li> 
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section class="text-center mb-10">
+            <img src="https://placehold.co/200x200/D97706/FFFFFF?text=Englishians+Logo" 
+                 alt="Shash-Tec Englishians Academy Logo Placeholder" 
+                 class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full shadow-md border-2 border-accent-gold">
+            <h1 class="text-3xl md:text-4xl font-bold text-royal-blue mb-2">Shash-Tec Englishians Academy</h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto italic">"Speak, Learn, Succeed"</p>
+        </section>
+
+        <section class="mb-12 accent-bg-light p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold accent-heading mb-4">Unlock Your Potential with English</h2>
+            <p class="text-gray-800 leading-relaxed">
+                Welcome to Shash-Tec Englishians Academy, your premier destination in Sakra, Muzaffarpur, for mastering the English language. Whether you're a student aiming for academic excellence, a professional seeking career advancement, or simply wish to communicate more confidently, our tailored programs are designed to help you achieve your goals. We focus on practical application, building fluency, and ensuring correct grammar and pronunciation.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-royal-blue mb-6 text-center">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Spoken English Foundation</h3>
+                    <p class="text-gray-600 text-sm">Build confidence in everyday conversations. Focus on basic vocabulary, sentence structure, and pronunciation.</p>
+                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Advanced Communication Skills</h3>
+                    <p class="text-gray-600 text-sm">Refine fluency, learn advanced vocabulary, and master group discussions, presentations, and public speaking.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Grammar & Writing Excellence</h3>
+                    <p class="text-gray-600 text-sm">Strengthen your understanding of English grammar rules and improve writing skills for academic and professional purposes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Business English</h3>
+                    <p class="text-gray-600 text-sm">Tailored coaching for professionals focusing on workplace communication, emails, reports, and meetings.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">School Curriculum Support</h3>
+                    <p class="text-gray-600 text-sm">Assistance for students (mention specific grades/boards if applicable) to excel in their school English syllabus.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 accent-border">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Interview Preparation</h3>
+                    <p class="text-gray-600 text-sm">Develop the skills and confidence needed to succeed in job interviews conducted in English.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 accent-bg-light p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold accent-heading mb-4">Why Learn With Us?</h2>
+            <ul class="list-disc list-inside text-gray-800 space-y-2">
+                <li><span class="font-semibold">Experienced Instructors:</span> Learn from qualified teachers passionate about English education.</li>
+                <li><span class="font-semibold">Personalized Approach:</span> We tailor our teaching methods to individual student needs and learning styles.</li>
+                <li><span class="font-semibold">Focus on Practical Skills:</span> Emphasis on real-world communication and spoken fluency.</li>
+                <li><span class="font-semibold">Interactive Learning Environment:</span> Engaging classes that encourage participation and practice.</li>
+                <li><span class="font-semibold">Convenient Location:</span> Easily accessible centre in Sakra, Muzaffarpur.</li>
+                </ul>
+        </section>
+
+        <section class="text-center bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-royal-blue mb-4">Ready to Start Your Journey?</h2>
+            <p class="text-gray-700 mb-6">
+                Contact us today to learn more about our courses, schedule, and fees, or to book a free consultation session.
+            </p>
+            <p class="text-lg font-semibold text-gray-800 mb-2">Call Us: 8130754515</p>
+            <p class="text-gray-600 mb-4">Visit Us: Office: Sakra, Muzaffarpur, Bihar</p>
+            <a href="mailto:info@shashtec.example.com?subject=Inquiry%20about%20Englishians%20Academy" 
+               class="inline-block bg-accent-gold text-white py-2 px-6 rounded-md hover:bg-opacity-90 transition-colors duration-200">
+               Email Us for Inquiry
+            </a>
+             </section>
+
+    </main> <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-semibold mb-2">Shash-Tec group of Institution</p>
+            <p class="mb-1">Office: Sakra, Muzaffarpur, Bihar</p>
+            <p class="mb-3">Contact: 8130754515</p>
+            <p class="text-sm text-gray-400">
+                &copy; 2025 Shash-Tec group of Institution. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
